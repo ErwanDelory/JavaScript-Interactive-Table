@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/solid.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/brands.min.css');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#tab {
+    margin: 0 auto;
+    padding: 0;
+    width: 850px;
+}
+
+
+body {
+    font-family: 'Cairo', cursive;
+    text-align: center;
+}
+
+/*Mise en forme du tableau*/
+table {
+    border-collapse: collapse;
+    counter-reset: case;
+    margin: 0;
+    width: 100%;
+}
+
+/*Création des cases du tableau*/
+th, td {
+    border: 1px solid black;
+    padding: 1vh;
+}
+
+/*Couleur du thead et du tfoot*/
+thead, tfoot {
+    background: grey;
+}
+
+/*Colorier une ligne sur deux du tableau*/
+tbody tr:nth-child(odd) {
+    background: lightgray;
+}
+
+/*Modification des inputs*/
+input {
+    border-radius: 0.5vh;
+    background-color: lightgray;
+}
+
+/*Animation des icons*/
+i:hover {
+    color: red;
+    transform: scale(1.10);
+}
+
+/*Masquer les icons*/
+.hide {
+    display: none;
+}
